@@ -7,15 +7,18 @@
 </head>
 <body>
 <div class="player">
-    <video src="BigBuckBunny_640x360.m4v"
+    <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
            class="player__video viewer"
-           autoplay>
+           autoplay
+           muted>
         <div class="player__controls">
             <div class="progress">
                 <div class="progress__filled"></div>
             </div>
             <button class="player__button toggle"
-                    title="Toggle Play"></button>
+                    title="Toggle Play">
+                ▶
+            </button>
             <input
                     type="range"
                     name="volume"
@@ -34,9 +37,18 @@
                     step="0.1"
                     value="1"
             >
+            <button class="player__button"
+                    data-skip="-10">
+                « 10s
+            </button>
+            <button class="player__button"
+                    data-skip="25">
+                25s »
+            </button>
         </div>
 
     </video>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
