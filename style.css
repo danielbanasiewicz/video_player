@@ -1,0 +1,13 @@
+.player:hover .progress{
+    height: 15px;
+}
+
+.progress{
+    flex: 10;
+    position: relative;
+    display: flex;
+    flex-basis: 100%;
+    transition: height 0.3s;
+    background: rgba(0,0,0,0.5);
+    cursor: ew-resize;
+}
